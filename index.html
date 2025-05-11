@@ -5,67 +5,98 @@
     <meta charset="UTF-8"> <!--  codifica che viene utilizzata -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- permette la visualizzazione nel dispay a seconda del device -->
     <title>Impariamo l'HTML</title> 
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <style> /* commento di tipo css */
+        body { /* body è il selettore */
+            color: burlywood; /* dichiarazione tutto quello all'interno delle graffe */
+            font-size: large;
+        }
+    </style> -->
 </head>
 <body>
-    <h1>Impariamo a scrivere in HTML</h1> <!-- dal livello formale è importante che i livelli di heading si seguano -->
-    <a href="#">index</a> <!-- riferimento ipertestuale, elemento di linea, # mi rimanda alla pagina che stiamo visualizzando  -->
-    <a href="./liste.html">liste</a>
-    <a href="./tabelle.html">tabelle</a>
-    <a href="./form.html">moduli</a>
-    <!-- <a href="#semanticatesto">indice argomento</a>
-    <a href="./liste.html#listeordinate">liste ordinate</a> 
-    alt + shift a -->
-    <h2>Gli elementi html</h2>
-    <p title="descizione degli elementi html tramite l'hover">>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> <!-- denominato tag vuoto, interruzione di linea -->, maxime veniam? Nesciunt officia <strong>veniam</strong> <!-- elemento di linea --> repellat eum reiciendis perferendis iste, voluptatibus vero maxime odit, ipsa magnam expedita eveniet quod culpa? Enim.</p> <!-- shorcut lorem +numero
-    alt + z per fare in modo che vada a capo
-    elemento di blocco occupa tutto lo spazio
-    elemento di linea occupo lo spazio legato al suo contenuto 
-    da cercare per ulteriori chiarimenti -->
-    <p>Lorem</p>
-    <strong>testo</strong><em>altro testo</em><!-- emfasi che viene dato al testo -->
-    <p>Lorem</p>
-    <hr>
-    <a href="mailto:doua.boufqir@edu.immaginazioneelavoro.it">Scrivimi</a>
-    <a href="tel:3284120115">Sentiamoci</a>
-    <a href="./assets/file/test.pdf" download="file pdf">esempio PDF</a>
-    <hr>
-    <hr><!-- horizontal roll, elemento che separa -->
-    <!-- <img src="https://placehold.co/600x400" alt="immagine placeholder" width="300" height="200"> --> <!-- elemento vuoto alt definisce il testo alternativo all'img,mostrare un testo alternativo a noi qualore l'immagine non venga visualizzata anche per gli screenreader 
-    dichiarare width e height è importante per lo shift del layout -->
-    <img src="./assets/img/31343C.svg" alt="immagine placeholder" width="300" height="200"> <!-- ./assets/img/31343C.svg identificano la stessa cosa, ossia che si trovano nella stessa cartella -->
-    <hr>
-    <div> <!-- shortcut ctrl+shift+p >> wrap >> invio >> div >> invio -->
-        <pre> <!-- visualizza il contenuto così come lo digitiamo -->
-            &lt;!DOCTYPE html&gt;  <!-- shortcut ctrl+d dopo aver selezionato il simbolo da voler modificare -->
-            &lt;html lang="it"&gt; <!-- lesser than (lt) greater than (gt) -->
-            &lt;head&gt;
-                &lt;meta charset="UTF-8"&gt;
-                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                &lt;title&gt;Impariamo l'HTML&lt;/title&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-        
-            &lt;/body&gt;
-            &lt;/html&gt;
-        </pre> <!-- tutto lo spazio viene contato se lo vogliamo allineato basta non mettere lo spazio iniziale -->
-    </div>
-    <!-- per verificare se il mio codice è scritto nel modo giusto w3c validator souce + outline  
-    mdn tag spiega la documentazione tutte le cose relative al tag -->
-    <h2 id="semanticatesto">Semantica del testo</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo vero ullam magni, maiores ducimus quod beatae tempore numquam aliquid incidunt, laborum, deserunt quam enim placeat? Possimus necessitatibus autem illo repellat.
-    Placeat accusantium repudiandae commodi ex nam voluptates magni fugiat eveniet. Aut iste repudiandae reprehenderit ratione nobis ex, voluptatibus dolores natus cumque asperiores iusto molestias perspiciatis esse quidem sit facere earum?
-    Quam at blanditiis delectus itaque fugit, laboriosam accusamus consequatur iste nobis sed quis nulla, veniam eum odio impedit sapiente reprehenderit nostrum quos? Soluta provident corporis voluptatem impedit. Exercitationem, iste aliquid.
-    Voluptatum error velit ea aliquam, laudantium perferendis! Doloribus ullam laboriosam libero voluptate aliquam, voluptates, quasi impedit, inventore quos dolor aut consequatur dignissimos fuga ipsum! Optio corrupti illo beatae inventore rerum.
-    Tenetur facilis animi, natus eligendi explicabo dignissimos corporis maxime accusamus laudantium doloribus ducimus laboriosam quisquam! Voluptatem debitis vero consequuntur reiciendis. Dignissimos laudantium magnam earum ipsum maxime sapiente cum quaerat id?
-    Id nisi, vitae reiciendis a nulla eos aspernatur accusamus qui quibusdam laborum sapiente, ipsum, deserunt rem aut molestiae sequi velit quidem. Autem quod nobis, nostrum voluptas unde ab quas totam!
-    Et alias esse dignissimos officiis tenetur similique exercitationem qui, ut voluptas expedita aspernatur reprehenderit quam pariatur? Cupiditate sunt distinctio, porro mollitia dolorem quibusdam nisi eligendi qui laudantium esse, facere aperiam.
-    Culpa rem eos, officia omnis similique distinctio fuga vel inventore corrupti nisi natus tenetur assumenda facere labore, deleniti cumque nemo veritatis sapiente accusantium suscipit expedita eaque? At ut consequuntur magni?
-    Voluptates, dignissimos minima perspiciatis, possimus delectus eius quasi aut nemo sapiente recusandae error. Porro, ratione ex impedit accusamus, aliquid eos, itaque sed dicta molestiae reiciendis perferendis eaque accusantium dolorem quae.
-    Sapiente amet, mollitia modi inventore quas exercitationem vel! Placeat, laborum ad dolor aliquam dolorem recusandae, tempore porro quos totam tenetur quibusdam inventore voluptate delectus earum officia sit soluta sint veniam!</p>
-    <a href="#capitolo1">
-        <svg height="150" width="150">
-            <circle cx="75" cy="75" r="35" stroke="green" stroke-width="3" fill="rgba(30,100,150,0.2)" />
-        </svg>
-    </a>
+    <header>
+        <h1>Impariamo a scrivere in HTML</h1> <!-- dal livello formale è importante che i livelli di heading si seguano -->
+        <nav>
+            <a href="#">index |</a> <!-- riferimento ipertestuale, elemento di linea, # mi rimanda alla pagina che stiamo visualizzando  -->
+            <a href="./liste.html">liste |</a>
+            <a href="./tabelle.html">tabelle |</a>
+            <a href="./form.html">moduli |</a>
+            <a href="./iframe.html">iframe |</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <!-- <a href="#semanticatesto">indice argomento</a>
+            <a href="./liste.html#listeordinate">liste ordinate</a>
+            alt + shift a -->
+            <header>
+                <h2>Gli elementi html</h2>
+            </header>
+            <h2>Gli elementi html</h2>
+            <p title="descizione degli elementi html tramite l'hover"><span>Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit.</span> <br> <!-- denominato tag vuoto, interruzione di linea -->, maxime veniam? Nesciunt officia <strong>veniam</strong> <!-- elemento di linea --> repellat eum reiciendis perferendis iste, voluptatibus vero maxime odit, ipsa magnam expedita eveniet quod culpa? Enim.</p> <!-- shorcut lorem +numero
+            alt + z per fare in modo che vada a capo
+            elemento di blocco occupa tutto lo spazio
+            elemento di linea occupo lo spazio legato al suo contenuto
+            da cercare per ulteriori chiarimenti -->
+            <p>Lorem</p>
+            <div>
+                <p>testo del div</p>
+            </div>
+            <p>Lorem ipsum sit dolor</p>
+            <p><strong>testo</strong><em>altro testo</em></p><!-- emfasi che viene dato al testo -->
+            <p class="myp">Lorem</p>
+            <hr>
+            <a href="mailto:doua.boufqir@edu.immaginazioneelavoro.it">Scrivimi</a>
+            <a href="tel:3284120115">Sentiamoci</a>
+            <a href="./assets/file/test.pdf" download="file pdf" target="_blank">esempio PDF</a>
+            <hr>
+            <hr><!-- horizontal roll, elemento che separa -->
+            <!-- <img src="https://placehold.co/600x400" alt="immagine placeholder" width="300" height="200"> --> <!-- elemento vuoto alt definisce il testo alternativo all'img,mostrare un testo alternativo a noi qualore l'immagine non venga visualizzata anche per gli screenreader
+            dichiarare width e height è importante per lo shift del layout -->
+            <!-- <img src="./assets/img/31343C.svg" alt="immagine placeholder" width="300" height="200"> --> <!-- ./assets/img/31343C.svg identificano la stessa cosa, ossia che si trovano nella stessa cartella -->
+            <hr>
+            <figure>
+                <img src="./assets/img/31343C.svg" alt="immagine placeholder" width="300" height="200">
+                <figcaption>Immagine placeholder</figcaption>
+            </figure>
+            <div> <!-- shortcut ctrl+shift+p >> wrap >> invio >> div >> invio -->
+                <pre> <!-- visualizza il contenuto così come lo digitiamo -->
+                    &lt;!DOCTYPE html&gt;  <!-- shortcut ctrl+d dopo aver selezionato il simbolo da voler modificare -->
+                    &lt;html lang="it"&gt; <!-- lesser than (lt) greater than (gt) -->
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Impariamo l'HTML&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+            
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </pre> <!-- tutto lo spazio viene contato se lo vogliamo allineato basta non mettere lo spazio iniziale -->
+            </div>
+            <!-- per verificare se il mio codice è scritto nel modo giusto w3c validator souce + outline
+            mdn tag spiega la documentazione tutte le cose relative al tag -->
+            <section>
+                <h2 id="semanticatesto">Semantica del testo</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo vero ullam magni, maiores ducimus quod beatae tempore numquam aliquid incidunt, laborum, deserunt quam enim placeat? Possimus necessitatibus autem illo repellat.
+                Placeat accusantium repudiandae commodi ex nam voluptates magni fugiat eveniet. Aut iste repudiandae reprehenderit ratione nobis ex, voluptatibus dolores natus cumque asperiores iusto molestias perspiciatis esse quidem sit facere earum?
+                Quam at blanditiis delectus itaque fugit, laboriosam accusamus consequatur iste nobis sed quis nulla, veniam eum odio impedit sapiente reprehenderit nostrum quos? Soluta provident corporis voluptatem impedit. Exercitationem, iste aliquid.
+                Voluptatum error velit ea aliquam, laudantium perferendis! Doloribus ullam laboriosam libero voluptate aliquam, voluptates, quasi impedit, inventore quos dolor aut consequatur dignissimos fuga ipsum! Optio corrupti illo beatae inventore rerum.
+                Tenetur facilis animi, natus eligendi explicabo dignissimos corporis maxime accusamus laudantium doloribus ducimus laboriosam quisquam! Voluptatem debitis vero consequuntur reiciendis. Dignissimos laudantium magnam earum ipsum maxime sapiente cum quaerat id?
+                Id nisi, vitae reiciendis a nulla eos aspernatur accusamus qui quibusdam laborum sapiente, ipsum, deserunt rem aut molestiae sequi velit quidem. Autem quod nobis, nostrum voluptas unde ab quas totam!
+                Et alias esse dignissimos officiis tenetur similique exercitationem qui, ut voluptas expedita aspernatur reprehenderit quam pariatur? Cupiditate sunt distinctio, porro mollitia dolorem quibusdam nisi eligendi qui laudantium esse, facere aperiam.
+                Culpa rem eos, officia omnis similique distinctio fuga vel inventore corrupti nisi natus tenetur assumenda facere labore, deleniti cumque nemo veritatis sapiente accusantium suscipit expedita eaque? At ut consequuntur magni?
+                Voluptates, dignissimos minima perspiciatis, possimus delectus eius quasi aut nemo sapiente recusandae error. Porro, ratione ex impedit accusamus, aliquid eos, itaque sed dicta molestiae reiciendis perferendis eaque accusantium dolorem quae.
+                Sapiente amet, mollitia modi inventore quas exercitationem vel! Placeat, laborum ad dolor aliquam dolorem recusandae, tempore porro quos totam tenetur quibusdam inventore voluptate delectus earum officia sit soluta sint veniam!</p>
+            </section>
+            <footer>
+
+            </footer>
+        </article>
+    </main>
+    <footer>
+        <p>Scritto da Boufqir Doua</p>
+    </footer>
 </body>
 </html>

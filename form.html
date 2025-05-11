@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I moduli</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <h1>Moduli</h1>
-    <a href="./index.html">index</a> 
-    <a href="./liste.html">liste</a>
-    <a href="./tabelle.html">tabelle</a>
-    <a href="#">moduli</a>
+    <nav>
+        <a href="./index.html">index |</a>
+        <a href="./liste.html">liste |</a>
+        <a href="./tabelle.html">tabelle |</a>
+        <a href="#">moduli |</a>
+        <a href="./iframe.html">iframe |</a>
+    </nav>
     <h2>Login</h2>
     <form method="post" action="data.php">
         <label for="name">User</label><br> <!-- si utilizza all'interno del form -->
@@ -24,35 +28,53 @@
     <form action="" enctype="multipart/form-data"> 
         <!-- specifica che tra i dati c'è anche un file -->
         <!-- MAI UN FORM ALL'INTERNO DELL'ALTRO -->
-        <label for="fullname">Nome completo</label>
-        <input type="text" name="fullname" id="fullname"><br> <!-- label+input:text -->
-        
-        <label for="m">
-            <input type="radio" name="genere" value="M" id="m">M
-        </label><br>
-        <label for="f">
-            <input type="radio" name="genere" value="F" id="f">F
-        </label><br>
-        <label for="nb">
-            <input type="radio" name="genere" value="NB" id="nb">NB
-        </label><br>
+        <fieldset>
+            <legend>Anagrafica</legend>
+            <label for="nome">Nome </label>
+            <input type="text" name="nome" id="nome" size="100" placeholder="inserisci il nome"><br> <!-- label+input:text -->
+            <label for="cognome">Cognome</label>
+            <input type="text" name="cognome" id="cognome" placeholder="inserisci il cognome"><br> <!-- label+input:text -->
+            
+            <label for="m">
+                <input type="radio" name="genere" value="M" id="m" checked>M
+            </label><br>
+            <label for="f">
+                <input type="radio" name="genere" value="F" id="f">F
+            </label><br>
+            <label for="nb">
+                <input type="radio" name="genere" value="NB" id="nb">NB
+            </label><br>
+        </fieldset>
 
-        <label for="foto"><input type="checkbox" name="foto" id="foto" value="foto">Fotografia</label><br>
-        <label for="musica"><input type="checkbox" name="musica" id="musica" value="musica">Musica</label><br>
-        <label for="sport"><input type="checkbox" name="sport" id="sport" value="sport">Sport</label><br>
+        <fieldset>
+            <legend>Altre info</legend>
+            <label for="foto"><input type="checkbox" name="foto" id="foto" value="foto" checked>Fotografia</label><br>
+            <label for="musica"><input type="checkbox" name="musica" id="musica" value="musica">Musica</label><br>
+            <label for="sport"><input type="checkbox" name="sport" id="sport" value="sport">Sport</label><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="data_nascita">Data nascita</label><br>
+            <input type="date" name="data_nascita" id="data_nascita"><br>
+            <label for="file">File</label><br>
+            <input type="file" name="file" id="file" accept="image/*"><br>
+            <label for="car">Scegli la tua auto preferita</label>
+            <select name="car" id="car"required>
+                <option value="">Scegli tra le marche</option>
+                <optgroup label="europee">
+                    <option value="1">Volvo</option><br>
+                    <option value="2">Fiat</option><br>
+                </optgroup>
+                <optgroup label="americane">
+                    <option value="3">Opel</option><br>
+                    <option value="4">Audi</option><br>
+                </optgroup>
+            </select><br>
+            <label for="messaggio">Inserisci un commento</label><br>
+        </fieldset>
+        <textarea name="messaggio" id="messaggio" cols="100" rows="5" readonly>Condizioni di utilizzo</textarea><br>
+        <input type="submit" value="registrati">
 
-        <label for="email">Email</label><br>
-        <input type="email" name="email" id="email"><br>
-
-        <label for="data_nascita">Data nascita</label><br>
-        <input type="date" name="data_nascita" id="data_nascita"><br>
-
-        <label for="file">File</label><br>
-        <input type="file" name="file" id="file"><br>
-
-        
-
-        <button>Invia</button>
+        <!-- <button>Invia</button>  -->
     </form>
 </body>
 </html>
