@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I moduli</title>
+</head>
+<body>
+    <h1>Moduli</h1>
+    <a href="./index.html">index</a> 
+    <a href="./liste.html">liste</a>
+    <a href="./tabelle.html">tabelle</a>
+    <a href="#">moduli</a>
+    <h2>Login</h2>
+    <form method="post" action="data.php">
+        <label for="name">User</label><br> <!-- si utilizza all'interno del form -->
+        <input type="text" name="name" id="name"><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password"><br>
+        <input type="submit" value="Login"><br>
+        <!-- <button>Spedisci</button> -->
+    </form>
+    <h2>Registrazione</h2>
+    <form action="" enctype="multipart/form-data"> 
+        <!-- specifica che tra i dati c'è anche un file -->
+        <!-- MAI UN FORM ALL'INTERNO DELL'ALTRO -->
+        <label for="fullname">Nome completo</label>
+        <input type="text" name="fullname" id="fullname"><br> <!-- label+input:text -->
+        
+        <label for="m">
+            <input type="radio" name="genere" value="M" id="m">M
+        </label><br>
+        <label for="f">
+            <input type="radio" name="genere" value="F" id="f">F
+        </label><br>
+        <label for="nb">
+            <input type="radio" name="genere" value="NB" id="nb">NB
+        </label><br>
+
+        <label for="foto"><input type="checkbox" name="foto" id="foto" value="foto">Fotografia</label><br>
+        <label for="musica"><input type="checkbox" name="musica" id="musica" value="musica">Musica</label><br>
+        <label for="sport"><input type="checkbox" name="sport" id="sport" value="sport">Sport</label><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="data_nascita">Data nascita</label><br>
+        <input type="date" name="data_nascita" id="data_nascita"><br>
+
+        <label for="file">File</label><br>
+        <input type="file" name="file" id="file"><br>
+
+        
+
+        <button>Invia</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+</head>
+<body>
+    <h1> Gli iframe</h1>
+    <a href="./index.html">index</a>
+    <a href="./liste.html">liste</a>
+    <a href="./tabelle.html">tabelle</a>
+    <a href="./form.html">moduli</a>
+    <a href="#">iframe</a>
+    <br>
+    <iframe title="homepage del sito wikipedia" src="https://it.wikipedia.org/wiki/Pagina_principale" width="600" height="200"></iframe> <!-- elemento di linea -->
+    <video width="600" height="400" controls muted autoplay> <!-- attributi booleani -->
+        <!-- se volessi un video in loop mettiamo: muted, autoplay e loop -->
+        <source src="./assets/video/flower.mp4" type="video/mp4">
+        <source src="./assets/video/flower.webm"type="video/webm">
+        Il tuo browser non supporta l'elemento video
+    </video> <!--  elemento di linea -->
+
+    <br>
+    <h2>Grafica HTML</h2>
+    <h3>SVG</h3>
+    <svg height="150" width="150">
+        <circle cx="75" cy="75" r="35" stroke="green" stroke-width="3" fill="rgba(30,100,150,0.2)" />
+    </svg>
+    <h3>Canvas</h3>
+    <button onclick="creaF()" type="button">Crea arco</button>
+    <canvas id="disegno" width="400" height="100">
+        Spiacente non supporto i canvas di HTML5
+    </canvas>
+    <script>
+        function creaF(){
+            var disegno=document.getElementById('disegno');
+            var context=disegno.getContext('2d');
+            context.arc(100,100,50,0,Math.PI,true);
+            context.lineWidth=5;
+            context.strokeStyle="rgba(0,0,255,1)";
+            context.stroke();
+            context.fillStyle="rgba(255,255,0,1)";
+            context.fill();
+        }
+    </script>
+    
+    
+</body>
+</html>
