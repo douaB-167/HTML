@@ -1,0 +1,127 @@
+/* convenzionale da mettere a inizio pagina */
+*, ::after, ::before{
+    box-sizing: border-box;
+} /* tutte le pagine seguono questo box model */
+body{
+    margin: 0;
+    font-size: 100%; /* dimensione del browser, che ora è 16px */
+    /* background-image: url('../img/31343C.svg');
+    background-repeat: no-repeat; */
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+h2{
+    color: blue;
+}
+table{
+    border-collapse: collapse;
+}
+h1::before{
+    content: '\270C';
+    color: red;
+    margin-right: 8px;
+}
+/* regole css */
+.box{
+    /* width: 300px; */
+    /* width: calc(300px - ((10px * 2) + (5px * 2))); */
+    /* padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px; */
+    padding: 10px;
+    /* padding: 20px 10px;
+    padding: 30px 10px 50px;
+    padding: 30px 10px 50px 100px; */
+    /* border-style: solid;
+    border-width: 5px; */
+    border: 1px solid black;
+    /* border-bottom: 0; */
+    /* margin-top: 16px;
+    margin-bottom: 32px; */
+    margin: 16px 0;
+    /* height: calc(300px - ((10px * 2) + (5px * 2))); */
+    /* height: 300px; */
+    overflow: auto;
+    border-radius: 8px 8px 8px 0;
+}
+/* .box:nth-child(2){
+    font-family: 'Times New Roman', Times, serif;
+} */
+/* p{
+    width: 400px;
+    height: 400px;
+} */
+.container{
+    width:960px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden; /* trick nasconde tutto in overflow per quando si vorrà attribuire uno sfondo */
+    /* background-color: lightblue; */
+}
+/* .example{
+    font-size: 24px;
+}
+.example1{
+    font-size: 2em;  riferito all'elemento genitore p 24*2
+}
+.example2{
+    font-size: 2rem;  riferito all'elemento radice html 16*2
+} */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+/* GRIGLIA */
+.col-1 {width: 8.33%}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+
+.container-flex{
+    display: flex;
+    height: 600px;
+    gap: 16px; /* è molto più flessibile usare gap invece che margin */
+    row-gap: 16px;
+    column-gap: 16px;
+    align-items: flex-start;
+    align-items: center; /* utile quando gli elementi si dispongono in una linea */
+    /* align-content: center; */ /* rispetto all'asse verticale */ /* utile quando gli elementi si dispongono in più righe */
+    /* justify-content: flex-end; */
+    justify-content: center; /* rispetto all'asse orizzontale */
+    /* justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: space-between;  */
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.flex{
+    border: 1px solid;
+    padding: 8px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    /* flex-shrink: 0; */
+}
+
+[class^="col-"] {
+    flex-shrink: 0; /* impediamo al box di restringersi */
+    flex-grow: 0; /* valore di default, il box non si espande */
+    padding-right: 15px;
+    padding-left: 15px
+}
