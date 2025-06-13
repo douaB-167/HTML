@@ -1,0 +1,99 @@
+/* body { body è il selettore
+    color: burlywood;  dichiarazione tutto quello all'interno delle graffe 
+    font-size: large;
+} */
+
+body{
+    color: yellow;
+    /* font-size: 40px; */
+    margin-top: 100px;
+}
+#titolo{ /* specificità */
+    color: green;
+}
+/* TIPOGRAFIA */
+h1, h2{
+    color: brown !important;
+}
+
+/* #myp{ /* classe 
+    color: green;
+} */
+
+/* .myp{
+    color: brown;
+}
+ */
+/* [title]{
+    color: blue;
+} */
+
+[target="_blank"]{
+    color: yellowgreen;
+}
+
+/* +, ~, >, ' ' */
+
+/* h2 + p{ /* fratelli adiacenti 
+    color: green;
+}
+
+h2 ~ p{ /* fratelli generici 
+    color: blueviolet;
+} */
+
+p > span{ /* primo figlio diretto */
+    margin-left: 16px;
+    margin-right: 16px; 
+}
+
+p span{ /* tutti i figli dei figli */
+    margin-left: 16px;
+    margin-right: 16px; 
+}
+
+li li{ /* le catene sono poco utili, da evitare */
+    color: green;
+}
+/* NAVIGA */
+/* pseudo classi */
+a:link{
+    color: black;
+}
+a:hover{
+    color: yellowgreen;
+}
+a:visited{
+    color: red;
+}
+div:hover{
+    color: yellow;
+}
+/* li{
+    border-bottom: 1px solid gray;
+} */
+/* li:nth-child(odd){ elementi dispari odd, pari even 
+    border-bottom: 1px solid gray;
+} */
+li:nth-child(2n + 1){
+    border-bottom: 1px solid gray;
+}
+/* li:last-child{
+    border-bottom: 0px;
+} */
+
+input[type='text']:focus, input[type='email']:focus, input[type='password']:focus{
+    background-color: green;
+}
+/* pseudo elemento */
+p::first-letter{
+    color: chocolate;
+}
+
+input[type='text']::placeholder{
+    color: chocolate;
+}
+
+/* *{
+    color: blue;
+} */
